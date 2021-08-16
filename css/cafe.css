@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;  
+}
+
+body{
+    font-size: 10px;
+    font-family: 'Flamenco', cursive;
+    overflow-x: hidden;
+    color:rgb(40, 11, 107);
+}
+header{
+    background-image:url('../images/pexels-karolina-grabowska-4195327.jpg');
+    background-size: cover;
+    background-repeat:no-repeat ;
+    background-position: center;
+    background-color: black;
+    height: 100vh;
+}
+
+/* //if logo and body in same line (upper line) */ */
+.clearfix:after{
+    content: ".";       
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+.row{
+    max-width: 1180px;
+    margin:0 auto ;
+}
+
+.main-nav{
+    float: right;
+    margin-top: 25px;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-right: 50px;
+
+}
+
+.main-nav li a{
+    padding:5px 0;
+    font-weight: bold;
+    color: rgb(246, 244, 247);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 150;
+
+    
+}
+
+.main-nav li a:hover{
+    border-bottom: 2px solid #010002;
+}
+
+
+.main-content-header{
+    width:1180px;
+    position: absolute;
+    top: 50%;
+    left: 39%;
+    
+}
+
+h1{
+    color: tomato;
+    font-size: 240%;
+    word-spacing:5px;
+    letter-spacing: 0px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.btn{
+    display: inline-block ;
+    padding: 10px 40px;
+    font-weight:bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition:backgorund-color 0.2s, border 0.2s, color 0.2s;
+}
+ 
+.btn-full{
+    background-color: transparent;
+    color: #0a0c0a;
+    margin-right: 15px;
+    border: 1px solid #060507 ;
+}
+
+.btn-full:hover{
+    background-color: cadetblue;
+}
+
+.btn-nav{
+
+    background-color: transparent;
+    color: rgb(5, 12, 4);
+    border: 1px solid rgb(10, 7, 7);
+}
+
+.btn-nav:hover{
+    background-color: cornflowerblue;
+}
+
+.colorchange{
+    animation: colorchange 1s infinite;
+}
+
+@keyframes colorchange{
+    0%{color:red;}
+    25%{color:green;}
+    50%{color: rgb(10, 7, 7);}
+    100%{color:purple;}
+}
+
+
+
+
+
